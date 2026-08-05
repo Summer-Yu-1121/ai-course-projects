@@ -1,0 +1,35 @@
+Udacity Bikeshare Project
+--------------------------------------------------
+
+This file lists the external resources I referred to while completing the 
+"Bikeshare Data Analysis" project.
+
+1. Python Documentation
+   https://docs.python.org/
+   Used for reviewing built-in functions, string handling, datetime operations, 
+   and general Python syntax.
+
+2. Pandas Documentation
+   https://pandas.pydata.org/pandas-docs/
+   Used to understand DataFrame functionality such as:
+   - value_counts()
+   - mode()
+   - groupby()
+   - datetime conversion and extraction (dt.month, dt.hour, dt.day_name)
+
+3. Udacity Classroom Material
+   Studied the lessons, examples, and walkthrough videos provided as part of 
+   the Data Analyst Nanodegree program to understand required project structure 
+   and approach.
+
+4. Stack Overflow (general reference)
+   Browsed solutions for understanding typical pandas usage challenges 
+   (such as handling missing columns and filtering).
+   No external code was copied directly.
+
+-------------------------------------------
+No other external websites, books, or resources were used.
+All implementation logic in bikeshare.py was written independently.
+
+Completion Date: March 2026
+Author: <yu zhang>
