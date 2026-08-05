@@ -1,40 +1,20 @@
-# AI Course Projects
+# GenAI Fundamentals Project
 
-This repository contains selected hands-on assignments and course projects completed as part of my learning journey in Generative AI, Python, AI-assisted development, and AI project management.
+## Overview
 
-## Portfolio Overview
+Introduction to Generative AI concepts using Python and Jupyter Notebook.
 
-| Project | Focus Area | Format | Status |
-|---|---|---|---|
-| GenAI Fundamentals | Generative AI and LLM fundamentals | Jupyter Notebook | Completed |
-| Prompt Engineering | Prompt structure, patterns, and evaluation | Notebook / Markdown | In Progress |
-| Python for AI | Python exercises for AI applications | Python / Notebook | In Progress |
-| GitHub Copilot | AI-assisted software development | Python | In Progress |
-| RAG Fundamentals | Retrieval and knowledge-grounded generation | Notebook | Planned |
-| Agentic AI | Agent workflows and task orchestration | Notebook / Python | Planned |
+## Topics
 
-## Learning Focus
-
-- Generative AI and Large Language Models
+- Large Language Models (LLMs)
 - Prompt Engineering
-- Python for AI
-- GitHub Copilot
-- Retrieval-Augmented Generation
-- Agentic AI Workflows
-- Responsible AI
-- AI Project Management
+- Generative AI Fundamentals
+- AI-assisted Development
 
-## Repository Structure
+## Files
 
-Each project folder contains, where applicable:
+- gen_ai_fundamentals_project_starter.ipynb
 
-- A short project-specific README
-- Source code or Jupyter Notebook
-- Sample or synthetic data
-- Results or screenshots
-- Key learning outcomes
+## Status
 
-## Disclaimer
-
-These repositories contain personal learning projects and sanitized demonstration material. No confidential company information, proprietary source code, internal documentation, credentials, or production data is included.
-
+✅ Completed
