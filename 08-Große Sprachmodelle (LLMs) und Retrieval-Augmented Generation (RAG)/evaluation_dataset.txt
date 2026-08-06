@@ -1,0 +1,14 @@
+Q: What were the main technical issues during Apollo 13?
+Expected: Mention oxygen tank explosion, loss of normal power, CO2 buildup risk, and use of LM as lifeboat.
+
+Q: What was Apollo 11's primary mission objective?
+Expected: Describe first crewed lunar landing, lunar EVA, sample collection, and safe Earth return.
+
+Q: What happened in the Challenger mission failure?
+Expected: Explain SRB O-ring failure in cold conditions, structural breakup after launch, and mission loss.
+
+Q: Compare Apollo 11 and Apollo 13 outcomes.
+Expected: Contrast successful moon landing vs aborted landing and emergency return.
+
+Q: Which mission data suggests lessons learned in risk management?
+Expected: Identify Challenger and Apollo 13 examples and the operational/process improvements implied.
