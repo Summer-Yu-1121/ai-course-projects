@@ -1,0 +1,111 @@
+# AI Edit Log
+
+## 2026-05-11 - Requirement Decomposition and Architecture Plan
+
+**Context:** I needed to convert the starter task-management project into the Flashcard Quizzer required by the rubric.
+
+**AI Tool Used:** GitHub Copilot (GPT-5.3-Codex)
+
+**Prompt/Request:** "Break the rubric into implementation modules and define a production-ready CLI architecture using Strategy Pattern."
+
+**AI Response:** Proposed modular split with `data_loader`, `quiz_engine`, `ui`, `strategies`, and `models`, plus CLI orchestration in `main.py`.
+
+**Changes Made:** I kept the modular architecture but required explicit custom exceptions for graceful user-facing errors.
+
+**Reasoning:** The rubric explicitly demands graceful crashes for missing/malformed JSON; explicit exceptions improve control and readability.
+
+**Outcome:** Final architecture was approved and used as implementation blueprint.
+
+**Lessons Learned:** AI is strong at fast decomposition, but acceptance criteria should still be mapped manually to avoid missing rubric details.
+
+---
+
+## 2026-05-11 - JSON Validation Logic
+
+**Context:** The app needed strict ingestion validation for flashcards.
+
+**AI Tool Used:** GitHub Copilot (GPT-5.3-Codex)
+
+**Prompt/Request:** "Generate a robust loader for JSON list items containing `Front` and `Back`, with helpful error messages."
+
+**AI Response:** Generated validation that checked file existence, JSON parsing, and list iteration.
+
+**Changes Made:** I rejected an early suggestion that allowed empty lists and weak field checks. I changed it to require non-empty list and non-empty string values for both keys.
+
+**Reasoning:** Loose validation could silently pass broken datasets and violate production-readiness expectations.
+
+**Outcome:** `FlashcardLoader` now raises `DataValidationError` for all malformed states with clear messages.
+
+**Lessons Learned:** AI often defaults to permissive parsers; production CLI tools need stricter validation contracts.
+
+---
+
+## 2026-05-11 - Strategy Pattern Implementation
+
+**Context:** Needed three quiz modes with extensible architecture.
+
+**AI Tool Used:** GitHub Copilot (GPT-5.3-Codex)
+
+**Prompt/Request:** "Implement sequential, random, and adaptive ordering with a strategy interface."
+
+**AI Response:** Created strategy classes and card ordering behavior.
+
+**Changes Made:** I rejected an adaptive design that retried missed cards in loops (risking long sessions) and switched to deterministic prioritization using miss counts.
+
+**Reasoning:** Predictable one-pass behavior improves testability and avoids UX issues while still meeting "prioritize wrong cards" requirement.
+
+**Outcome:** Final `AdaptiveStrategy` sorts by descending miss count and remains open for future spaced repetition modes.
+
+**Lessons Learned:** AI can over-engineer adaptive behavior; simple deterministic algorithms are often better first versions.
+
+---
+
+## 2026-05-11 - Test Suite and Type Safety Refinement
+
+**Context:** Needed >80% coverage and full type hints.
+
+**AI Tool Used:** GitHub Copilot (GPT-5.3-Codex)
+
+**Prompt/Request:** "Create pytest coverage for loader, strategies, engine, and CLI error handling."
+
+**AI Response:** Produced tests for happy path and error scenarios.
+
+**Changes Made:** I modified type annotations after `mypy` errors by introducing a protocol-based UI interface (`QuizUIProtocol`) instead of concrete class coupling.
+
+**Reasoning:** Tests use fake/stub UIs; protocol typing enables substitution cleanly and improves architecture.
+
+**Outcome:** `mypy` passed with no errors, and test coverage reached 93%.
+
+**Lessons Learned:** AI-generated tests are a strong baseline, but typing constraints usually need a second review pass.
+
+---
+
+## 2026-05-11 - Documentation and Submission Packaging
+
+**Context:** Needed complete deliverables: README, prompt log, and final report.
+
+**AI Tool Used:** GitHub Copilot (GPT-5.3-Codex)
+
+**Prompt/Request:** "Prepare submission-ready docs aligned with rubric and include reproducible run steps."
+
+**AI Response:** Drafted README structure and deliverable checklist language.
+
+**Changes Made:** I edited docs to include exact commands used in validation (`--help`, sequential mode run, coverage command) and clarified output expectations.
+
+**Reasoning:** Reviewers must be able to reproduce results quickly; explicit command-level documentation reduces ambiguity.
+
+**Outcome:** Documentation now aligns with rubric requirements and reflects real verification runs.
+
+**Lessons Learned:** AI is useful for first drafts, but final docs require precise, evidence-based details from actual runs.
+
+---
+
+## Summary Statistics
+
+- **Total AI interactions:** 9
+- **Lines of AI-generated code used:** ~330
+- **Lines of AI-generated code modified:** ~120
+- **Most helpful AI interaction:** architecture decomposition into clean modules
+- **Most challenging AI interaction:** resolving protocol vs concrete typing for test doubles
+- **Biggest lesson learned:** AI accelerates implementation, but deterministic validation and strict review are still human responsibilities
+
