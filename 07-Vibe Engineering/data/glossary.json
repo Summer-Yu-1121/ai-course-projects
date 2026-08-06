@@ -1,0 +1,18 @@
+[
+  {
+    "Front": "API",
+    "Back": "Application Programming Interface"
+  },
+  {
+    "Front": "CLI",
+    "Back": "Command Line Interface"
+  },
+  {
+    "Front": "CI",
+    "Back": "Continuous Integration"
+  },
+  {
+    "Front": "CD",
+    "Back": "Continuous Deployment"
+  }
+]
