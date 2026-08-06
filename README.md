@@ -1,8 +1,8 @@
-# AI Course Projects
+# AI Learning Portfolio
 
 Welcome to my AI learning portfolio.
 
-This repository contains hands-on projects, exercises, and learning artifacts completed during my journey in Artificial Intelligence, Generative AI, and AI-assisted software development.
+This repository contains hands-on projects, exercises, and learning artifacts completed as part of my journey in Artificial Intelligence, Generative AI, AI-assisted software development, and AI Project Management.
 
 ---
 
@@ -10,130 +10,175 @@ This repository contains hands-on projects, exercises, and learning artifacts co
 
 Hi, I'm Yu Zhang.
 
-I am an experienced Project Management Specialist with a background in automotive software delivery, system integration, and digital transformation.
+I am a Project Management Specialist with extensive experience in automotive software delivery, risk management, stakeholder management, and digital transformation.
 
-Currently, I am expanding my expertise in:
+I am currently expanding my expertise in:
 
 - Generative AI
-- Agentic AI
 - Prompt Engineering
+- Agentic AI
 - Azure AI Foundry
-- Retrieval-Augmented Generation (RAG)
+- AI Agents
+- Software Architecture
 - AI Project Management (PMI-CPMAI)
 
 ---
 
 # Learning Roadmap
 
-## Completed
+## Data & Programming Foundations
 
-✅ Generative AI Fundamentals
+✅ 01 - GenAI Fundamentals
 
-✅ Introduction to Version Control
+✅ 02 - Explore US Bikeshare Data
 
-## In Progress
+✅ 03 - Introduction to Version Control
+
+✅ 04 - GitHub Copilot with Python
+
+✅ 05 - Test-Driven Development
+
+---
+
+## Software Engineering Fundamentals
+
+✅ 06 - Design Patterns
+
+✅ 07 - Vibe Engineering
+
+✅ 09 - Software Architecture Patterns
+
+---
+
+## Generative AI
+
+✅ 08 - Large Language Models (LLMs)
 
 🔄 Prompt Engineering
 
-🔄 GitHub Copilot
+🔄 Retrieval-Augmented Generation (RAG)
 
-🔄 PMI-CPMAI
+---
 
-🔄 Azure AI Foundry
+## Agentic AI & Azure AI
 
-## Planned
+✅ 10 - Agentic AI Workflows with Microsoft Azure
 
-📋 Retrieval-Augmented Generation (RAG)
+✅ 11 - Building AI Agents with Microsoft Azure
 
-📋 Agentic AI Workflows
-
-📋 AI Project Management Toolkit
+✅ 12 - Multi-Agent AI Systems with Microsoft Azure
 
 ---
 
 # Projects
 
-## 01 - GenAI Fundamentals
+## 01 – GenAI Fundamentals
 
-Introduction to Generative AI concepts using Python and Jupyter Notebook.
+Introduction to Large Language Models, Prompt Engineering, and Generative AI concepts.
 
-### Topics
-
-- Large Language Models (LLMs)
-- Prompt Engineering
-- Generative AI Fundamentals
-- AI-Assisted Development
-
-### Files
-
-- gen_ai_fundamentals_project_starter.ipynb
-
-### Status
-
-✅ Completed
+### Skills
+- LLM Fundamentals
+- Prompt Design
+- Jupyter Notebook
+- AI Concepts
 
 ---
 
-## 02 - Prompt Engineering
+## 02 – Explore US Bikeshare Data
 
-Prompt design, prompt patterns, and prompt evaluation.
+Data analysis project using Python and real-world bicycle trip data.
 
-### Topics
-
-- Zero-Shot Prompting
-- Few-Shot Prompting
-- Chain of Thought Prompting
-- Output Formatting
-
-### Status
-
-🔄 In Progress
+### Skills
+- Data Analysis
+- Python
+- Statistics
+- Data Visualization
 
 ---
 
-## 03 - Introduction to Version Control
+## 03 – Introduction to Version Control
 
-Hands-on Git and GitHub exercises.
+Hands-on Git and GitHub workflow exercises.
 
-### Topics
-
-- Git Fundamentals
-- Repository Management
-- Branching Strategy
+### Skills
+- Git
+- GitHub
+- Branching
 - Merge Workflow
 
-### Files
+---
 
-- Git_Commands_Documentation_.pdf
+## 04 – GitHub Copilot with Python
 
-### Status
+Exploring AI-assisted software development using GitHub Copilot.
 
-✅ Completed
+### Skills
+- AI Coding Assistance
+- Python
+- Productivity Enhancement
 
 ---
 
-## Future Projects
+## 05 – Test-Driven Development
 
-### Azure AI Foundry Lab
+Applying testing concepts to improve software quality.
 
-Practical exercises related to agent development and AI workflow orchestration.
+### Skills
+- Unit Testing
+- Refactoring
+- Testing Best Practices
 
-### RAG Knowledge Assistant
+---
 
-Knowledge retrieval using vector search and LLMs.
+## 06 – Design Patterns
 
-### Agentic AI Workflow
+Understanding reusable software design solutions.
 
-Multi-agent orchestration and automated task execution.
+### Skills
+- SOLID Principles
+- Design Patterns
+- Clean Architecture
 
-### AI Project Management Toolkit
+---
 
-Applying AI to:
+## 07 – Vibe Engineering
 
-- Risk Management
-- Meeting Summaries
-- Stakeholder Analysis
-- Project Reporting
+Exploring modern software engineering concepts and development workflows.
+
+---
+
+## 08 – Large Language Models (LLMs)
+
+Understanding how foundation models work and how they are applied in modern AI systems.
+
+---
+
+## 09 – Software Architecture Patterns
+
+Learning architectural approaches for scalable and maintainable systems.
+
+### Skills
+- Software Architecture
+- Scalability
+- System Design
+
+---
+
+## 10 – Agentic AI Workflows with Microsoft Azure
+
+Building workflow-based AI agents using Azure AI services.
+
+---
+
+## 11 – Building AI Agents with Microsoft Azure
+
+Developing autonomous AI agents capable of task execution and decision support.
+
+---
+
+## 12 – Multi-Agent AI Systems with Microsoft Azure
+
+Exploring collaboration and orchestration between multiple AI agents.
 
 ---
 
@@ -142,64 +187,49 @@ Applying AI to:
 ## AI
 
 - Generative AI
+- Large Language Models (LLMs)
 - Prompt Engineering
-- LLM Fundamentals
 - Agentic AI
-- RAG Concepts
+- AI Agents
+- Multi-Agent Systems
 
-## Technical
+## Cloud & Tools
 
-- Python
-- Jupyter Notebook
+- Azure AI Foundry
+- GitHub Copilot
 - Git
 - GitHub
-- GitHub Copilot
+
+## Software Engineering
+
+- Python
+- Design Patterns
+- Test-Driven Development
+- Software Architecture
 
 ## Project Management
 
 - Agile (SAFe)
-- Delivery Management
-- Risk Management
 - Stakeholder Management
+- Risk Management
+- Delivery Management
 - AI Project Management
 
 ---
 
-# Certifications
+# Current Learning Focus
 
-- ASQF® CPPM
-- Leading SAFe®
-- ISTQB®
-- PMP® (In Progress)
-- PMI-CPMAI™ (In Progress)
-
----
-
-# Repository Structure
-
-```text
-ai-course-projects
-│
-├── README.md
-│
-├── 01-genai-fundamentals
-│
-├── 02-prompt-engineering
-│
-├── 03-introduction-to-version-control
-│
-├── 04-github-copilot
-│
-├── 05-rag-demo
-│
-└── 06-agentic-ai
-```
+- PMI-CPMAI
+- Agentic AI
+- Azure AI Foundry
+- AI Governance
+- Retrieval-Augmented Generation (RAG)
+- AI Project Management
 
 ---
 
 # Disclaimer
 
-All content in this repository is intended for educational and portfolio purposes only.
+All projects and learning artifacts in this repository are intended for educational and portfolio purposes only.
 
-No confidential company information, proprietary source code, internal documentation, or production data is included.
-`
+No confidential company information, proprietary code, internal documentation, or production data is included.
